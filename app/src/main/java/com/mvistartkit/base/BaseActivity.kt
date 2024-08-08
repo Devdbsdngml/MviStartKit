@@ -17,6 +17,7 @@ abstract class BaseActivity<B : ViewBinding>(
         setContentView(binding.root)
 
         init()
+        initSubscribe()
     }
 
     override fun onDestroy() {
@@ -25,4 +26,6 @@ abstract class BaseActivity<B : ViewBinding>(
     }
 
     open fun init() {}
+
+    open fun initSubscribe() {}
 }

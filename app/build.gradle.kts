@@ -59,9 +59,15 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+    implementation(project(":data"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.androidx.paging)
+    implementation(libs.androidx.paging.common)
 
     implementation(libs.kotlinx.coroutines.android)
 
